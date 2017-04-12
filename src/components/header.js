@@ -1,5 +1,8 @@
+/* eslint react/prop-types: 0 */
+
 import React from 'react';
 import { Text, View } from 'react-native';
+import AlbumList from './AlbumList';
 
 const styles = {
   viewStyle: {
@@ -23,7 +26,8 @@ const Header = (props) => {
 
   return (
     <View style={viewStyle}>
-      <Text style={textStyle}> {'Albums'} </Text>
+      <Text style={textStyle}> {props.headerText} </Text>
+      <AlbumList />
     </View>
   );
 };
