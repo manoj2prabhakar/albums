@@ -1,12 +1,14 @@
 import React from 'react';
-import { AppRegistry, View } from 'react-native';
+import { AppRegistry, View, ScrollView } from 'react-native';
 import Header from './src/components/header';
 import AlbumList from './src/components/AlbumList';
 
 const App = () => (
   <View>
-    <Header headerText={'Albums!'} />
-    <AlbumList />
+    <ScrollView>
+      <Header headerText={'Albums!'} />
+      <AlbumList />
+    </ScrollView>
   </View>
 );
 
